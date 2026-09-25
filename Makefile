@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-Iinclude -Wall -Wextra -O2
+CFLAGS=-Iinclude -Wall -Wextra -Werror -Wpedantic -g
 
 SRC=\
 src/main.c \
@@ -17,3 +17,4 @@ all:
 
 clean:
 	rm -f cpu-monitor
+
